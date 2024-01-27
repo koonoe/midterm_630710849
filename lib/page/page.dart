@@ -64,6 +64,28 @@ class _PinState extends State<Pin> {
 
   Widget bulitcal() {
     return Scaffold(
+      appBar: AppBar(
+        title: Container(
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                child: Icon(
+                  Icons.calculate,
+                  weight: 30,
+                  size: 50,
+                  color: Colors.greenAccent,
+                ),
+              ),
+              Text(
+                'MY CALCULATOR',
+                style: TextStyle(color: Colors.black),
+              ),
+            ],
+          ),
+        ),
+      ),
       body: Column(children: [
         Row(
           mainAxisAlignment: MainAxisAlignment.end,
@@ -90,8 +112,8 @@ class _PinState extends State<Pin> {
                         clear();
                       },
                       child: Container(
-                          width: 80,
-                          height: 80,
+                          width: 70,
+                          height: 70,
                           decoration: BoxDecoration(
                               border: Border.all(
                                   width: 1.0,
@@ -100,7 +122,7 @@ class _PinState extends State<Pin> {
                           child: Center(
                             child: Text(
                               'C',
-                              style: TextStyle(fontSize: 50),
+                              style: TextStyle(fontSize: 40),
                             ),
                           )),
                     ),
@@ -114,8 +136,8 @@ class _PinState extends State<Pin> {
                       delete();
                     },
                     child: Container(
-                      width: 80,
-                      height: 80,
+                      width: 70,
+                      height: 70,
                       decoration: BoxDecoration(
                           border: Border.all(
                               width: 1,
@@ -124,7 +146,7 @@ class _PinState extends State<Pin> {
                       child: Center(
                           child: Icon(
                         Icons.backspace_outlined,
-                        size: 50,
+                        size: 40,
                       )),
                     ),
                   ),
@@ -144,8 +166,8 @@ class _PinState extends State<Pin> {
                       addnum('7');
                     },
                     child: Container(
-                        width: 80,
-                        height: 80,
+                        width: 70,
+                        height: 70,
                         decoration: BoxDecoration(
                             border: Border.all(
                                 width: 1.0,
@@ -154,7 +176,7 @@ class _PinState extends State<Pin> {
                         child: Center(
                           child: Text(
                             '7',
-                            style: TextStyle(fontSize: 50),
+                            style: TextStyle(fontSize: 30),
                           ),
                         )),
                   ),
@@ -168,8 +190,8 @@ class _PinState extends State<Pin> {
                       addnum('8');
                     },
                     child: Container(
-                        width: 80,
-                        height: 80,
+                        width: 70,
+                        height: 70,
                         decoration: BoxDecoration(
                             border: Border.all(
                                 width: 1.0,
@@ -178,7 +200,7 @@ class _PinState extends State<Pin> {
                         child: Center(
                           child: Text(
                             '8',
-                            style: TextStyle(fontSize: 50),
+                            style: TextStyle(fontSize: 30),
                           ),
                         )),
                   ),
@@ -192,8 +214,8 @@ class _PinState extends State<Pin> {
                       addnum('9');
                     },
                     child: Container(
-                        width: 80,
-                        height: 80,
+                        width: 70,
+                        height: 70,
                         decoration: BoxDecoration(
                             border: Border.all(
                                 width: 1.0,
@@ -202,7 +224,7 @@ class _PinState extends State<Pin> {
                         child: Center(
                           child: Text(
                             '9',
-                            style: TextStyle(fontSize: 50),
+                            style: TextStyle(fontSize: 30),
                           ),
                         )),
                   ),
@@ -216,8 +238,8 @@ class _PinState extends State<Pin> {
                       addsign(divideSign);
                     },
                     child: Container(
-                        width: 80,
-                        height: 80,
+                        width: 70,
+                        height: 70,
                         decoration: BoxDecoration(
                             border: Border.all(
                                 width: 1.0,
@@ -226,7 +248,7 @@ class _PinState extends State<Pin> {
                         child: Center(
                           child: Text(
                             divideSign,
-                            style: TextStyle(fontSize: 50),
+                            style: TextStyle(fontSize: 30),
                           ),
                         )),
                   ),
@@ -244,8 +266,8 @@ class _PinState extends State<Pin> {
                       addnum('4');
                     },
                     child: Container(
-                        width: 80,
-                        height: 80,
+                        width: 70,
+                        height: 70,
                         decoration: BoxDecoration(
                             border: Border.all(
                                 width: 1.0,
@@ -254,7 +276,7 @@ class _PinState extends State<Pin> {
                         child: Center(
                           child: Text(
                             '4',
-                            style: TextStyle(fontSize: 50),
+                            style: TextStyle(fontSize: 30),
                           ),
                         )),
                   ),
@@ -268,8 +290,8 @@ class _PinState extends State<Pin> {
                       addnum('5');
                     },
                     child: Container(
-                        width: 80,
-                        height: 80,
+                        width: 70,
+                        height: 70,
                         decoration: BoxDecoration(
                             border: Border.all(
                                 width: 1.0,
@@ -278,7 +300,7 @@ class _PinState extends State<Pin> {
                         child: Center(
                           child: Text(
                             '5',
-                            style: TextStyle(fontSize: 50),
+                            style: TextStyle(fontSize: 30),
                           ),
                         )),
                   ),
@@ -292,8 +314,8 @@ class _PinState extends State<Pin> {
                       addnum('6');
                     },
                     child: Container(
-                        width: 80,
-                        height: 80,
+                        width: 70,
+                        height: 70,
                         decoration: BoxDecoration(
                             border: Border.all(
                                 width: 1.0,
@@ -302,7 +324,7 @@ class _PinState extends State<Pin> {
                         child: Center(
                           child: Text(
                             '6',
-                            style: TextStyle(fontSize: 50),
+                            style: TextStyle(fontSize: 30),
                           ),
                         )),
                   ),
@@ -316,8 +338,8 @@ class _PinState extends State<Pin> {
                       addsign(multiplySign);
                     },
                     child: Container(
-                        width: 80,
-                        height: 80,
+                        width: 70,
+                        height: 70,
                         decoration: BoxDecoration(
                             border: Border.all(
                                 width: 1.0,
@@ -326,7 +348,7 @@ class _PinState extends State<Pin> {
                         child: Center(
                           child: Text(
                             multiplySign,
-                            style: TextStyle(fontSize: 50),
+                            style: TextStyle(fontSize: 30),
                           ),
                         )),
                   ),
@@ -344,8 +366,8 @@ class _PinState extends State<Pin> {
                       addnum('1');
                     },
                     child: Container(
-                        width: 80,
-                        height: 80,
+                        width: 70,
+                        height: 70,
                         decoration: BoxDecoration(
                             border: Border.all(
                                 width: 1.0,
@@ -354,7 +376,7 @@ class _PinState extends State<Pin> {
                         child: Center(
                           child: Text(
                             '1',
-                            style: TextStyle(fontSize: 50),
+                            style: TextStyle(fontSize: 30),
                           ),
                         )),
                   ),
@@ -368,8 +390,8 @@ class _PinState extends State<Pin> {
                       addnum('2');
                     },
                     child: Container(
-                        width: 80,
-                        height: 80,
+                        width: 70,
+                        height: 70,
                         decoration: BoxDecoration(
                             border: Border.all(
                                 width: 1.0,
@@ -378,7 +400,7 @@ class _PinState extends State<Pin> {
                         child: Center(
                           child: Text(
                             '2',
-                            style: TextStyle(fontSize: 50),
+                            style: TextStyle(fontSize: 30),
                           ),
                         )),
                   ),
@@ -392,8 +414,8 @@ class _PinState extends State<Pin> {
                       addnum('3');
                     },
                     child: Container(
-                        width: 80,
-                        height: 80,
+                        width: 70,
+                        height: 70,
                         decoration: BoxDecoration(
                             border: Border.all(
                                 width: 1.0,
@@ -402,7 +424,7 @@ class _PinState extends State<Pin> {
                         child: Center(
                           child: Text(
                             '3',
-                            style: TextStyle(fontSize: 50),
+                            style: TextStyle(fontSize: 30),
                           ),
                         )),
                   ),
@@ -416,8 +438,8 @@ class _PinState extends State<Pin> {
                       addsign(subtractSign);
                     },
                     child: Container(
-                        width: 80,
-                        height: 80,
+                        width: 70,
+                        height: 70,
                         decoration: BoxDecoration(
                             border: Border.all(
                                 width: 1.0,
@@ -426,7 +448,7 @@ class _PinState extends State<Pin> {
                         child: Center(
                           child: Text(
                             subtractSign,
-                            style: TextStyle(fontSize: 50),
+                            style: TextStyle(fontSize: 30),
                           ),
                         )),
                   ),
@@ -444,8 +466,8 @@ class _PinState extends State<Pin> {
                       addnum('0');
                     },
                     child: Container(
-                        width: 80,
-                        height: 80,
+                        width: 70,
+                        height: 70,
                         decoration: BoxDecoration(
                             border: Border.all(
                                 width: 1.0,
@@ -454,7 +476,7 @@ class _PinState extends State<Pin> {
                         child: Center(
                           child: Text(
                             '0',
-                            style: TextStyle(fontSize: 50),
+                            style: TextStyle(fontSize: 30),
                           ),
                         )),
                   ),
@@ -468,8 +490,8 @@ class _PinState extends State<Pin> {
                       addsign(addSign);
                     },
                     child: Container(
-                        width: 80,
-                        height: 80,
+                        width: 70,
+                        height: 70,
                         decoration: BoxDecoration(
                             border: Border.all(
                                 width: 1.0,
@@ -478,7 +500,7 @@ class _PinState extends State<Pin> {
                         child: Center(
                           child: Text(
                             addSign,
-                            style: TextStyle(fontSize: 50),
+                            style: TextStyle(fontSize: 30),
                           ),
                         )),
                   ),
@@ -496,8 +518,8 @@ class _PinState extends State<Pin> {
                       clear();
                     },
                     child: Container(
-                        width: 100,
-                        height: 100,
+                        width: 80,
+                        height: 80,
                         decoration: BoxDecoration(
                             border: Border.all(
                                 width: 1.0,
@@ -506,7 +528,7 @@ class _PinState extends State<Pin> {
                         child: Center(
                           child: Text(
                             equalSign,
-                            style: TextStyle(fontSize: 50),
+                            style: TextStyle(fontSize: 30),
                           ),
                         )),
                   ),
